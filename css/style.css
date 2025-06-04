@@ -1,0 +1,122 @@
+:root {
+      --primary-color: #1e3a8a;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    p {
+      margin: 0px !important;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+    }
+    #questionContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .back-icon {
+      position: absolute;
+      top: -0.5rem;
+      left: -1rem;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+    footer {
+      background-color: #1e293b;
+      color: #fff;
+      text-align: center;
+      font-size: 0.875rem;
+      padding: 0.5rem 0.5rem;
+    }
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+    .question-box, .result-box, .summary-text-box, .summary-table {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      max-width: 700px;
+    }
+    .question-box h3, .result-box h3 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      font-size: 1.2rem !important;
+    }
+    .answer-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .answer-item {
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      width: 120px;
+      transition: all 0.2s ease-in-out;
+    }
+    .answer-item:hover {
+      background-color: #f0f0f0;
+    }
+    .answer-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    button {
+      margin: 1rem 0.5rem 0;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0f265c;
+    }
+    textarea {
+      font-size: 1rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      width: 100%;
+      max-width: 500px;
+    }
+    .navigation-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
